@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+*{
+  margin:0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+:root {
+  --color-primario:#84cdea;
+  --color-secundario:#FCDDC9;
+  --color-terciario:#fedff1;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+@font-face {
+  font-family: 'F-Titulo';
+  src: url('./styles/fonts/Babyque.ttf') format('truetype');
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
+h1 {
+  font-family: 'F-Titulo';
+}
+h1{  
+  font-size: 75px;
+  color: black;  
+}
+
+h2{  
+  font-size: 40px;
+  color: black;  
+}
+h1 span {
+  color: var(--color-primario)
+}
+
+header{
+  background-color: var(--color-terciario);
+  width: 100%;
+}
+
+.slogo {
+  height: 75px;
+  width: 75px;
+}
+
+.maincontainer{   
+  height: 100vh; 
+  width: 100%; 
+  margin:0;    
+}
+
+.alignedcontainer{
+  background-color: var(--color-terciario);  
+  height: 100vh; 
+  width: 100%;   
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding-top:5%;
+    
 }
 
-.App-link {
-  color: #61dafb;
+.nav-header {
+  border-bottom: 1px solid hsla(0, 0%, 63%, 0.778);
+}
+nav ul li a{
+  color: black;
+  border-bottom: 1px solid black;
+  border-radius: 5%;
+  margin-right: 15px;
+  padding: 5px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav ul li a:hover{
+  color: var(--color-primario);
+  border-bottom: 1px solid #2057ff;
+  border-radius: 5%;
+  margin-right: 15px;
+  padding: 5px;
+}
+
+/*Landing page */
+
+section{
+  background-color:#ffffff;
+  height: 100%;
+}
+
+.sectionC{
+  background-color: white;
+  border: 2px solid rgb(221, 221, 221);
+  border-radius: 5%;
+  padding: 25px 15px;
+  padding-bottom: 50px;
+  margin: 15px 0 0 0;
+}
+
+/* EVENTOS */
+
+.nav-header-eventos {
+  width: 100%;  
+  background-color: #dae3ff;
+  height: 30px;
+}
+
+.nav-header-eventos ul {
+  width: 100%;
+  height: 100%;
+}
+
+.nav-header-eventos ul li a{
+  color: black;  
+  border-radius: 5%;
+  margin-right: 15px;  
+}
+
+.nav-header-eventos ul li a:hover{
+  color: rgb(255, 65, 65); 
+  margin: 20px 50px;
+  padding: 5px;
 }
